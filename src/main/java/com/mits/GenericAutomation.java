@@ -89,11 +89,12 @@ public class GenericAutomation {
 
 	/**
 	 * this method is used to open the Browser
+	 * @throws InterruptedException 
 	 * 
 	 * @throws CustomizedException
 	 **/
 
-	public static void openBrowser()  {
+	public static void openBrowser() throws InterruptedException  {
 
 		logger.info("Opening the browser window");
 		// creating the instance for the firefox driver ..System.setProperty("webdriver.chrome.driver","D:\\sunita\\Drivers\\chromedriver.exe");
@@ -113,7 +114,7 @@ public class GenericAutomation {
 			logger.info("Maximize the ICM window browser");
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-		
+		Thread.sleep(5000);
 			
 		}
 

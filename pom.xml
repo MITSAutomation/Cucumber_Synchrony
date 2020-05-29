@@ -85,11 +85,11 @@
 			<version>1.2.5</version>			
 		</dependency>
 
-		<dependency>
+		<!-- <dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-jvm-deps</artifactId>
 			<version>1.0.5</version>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>info.cukes</groupId>
 			<artifactId>cucumber-testng</artifactId>
@@ -153,6 +153,17 @@
 			<artifactId>poi</artifactId>
 			<version>3.9</version>
 		</dependency>
+<dependency>
+	<groupId>com.vimalselvam</groupId>
+	<artifactId>cucumber-extentsreport</artifactId>
+	<version>3.0.2</version>
+</dependency>
+<dependency>
+	<groupId>com.aventstack</groupId>
+	<artifactId>extentreports</artifactId>
+	<version>3.1.2</version>
+</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
 		<!-- <dependency> <groupId>org.seleniumhq.selenium</groupId> <artifactId>selenium-chrome-driver</artifactId> 

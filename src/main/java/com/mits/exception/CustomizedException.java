@@ -28,7 +28,7 @@ public class CustomizedException extends Exception {
         super(message);
         this.message = message;
     }
-    
+   
 	public CustomizedException(Exception exception, WebDriver driver) {
 		// driver.quit();
 		logger.info("The webdriver is not configured properly please check****** ");
