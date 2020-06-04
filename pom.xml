@@ -16,56 +16,7 @@
 		<maven.compiler.source>1.7</maven.compiler.source>
 		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>com.trivago.rta</groupId>
-				<artifactId>cluecumber-report-plugin</artifactId>
-				<version>1.10.2</version>
-				<executions>
-					<execution>
-						<id>report</id>
-						<phase>post-integration-test</phase>
-						<goals>
-							<goal>reporting</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<sourceJsonReportDirectory>C:/Users/mitsind475/git/IND_MITS_SeleniumProject/Cucumber_SeleniumTest/target/cucumber-report</sourceJsonReportDirectory>
-					<generatedHtmlReportDirectory>C:/Users/mitsind475/git/IND_MITS_SeleniumProject/Cucumber_SeleniumTest/target/cucumber-html-report
-						- Copy</generatedHtmlReportDirectory>
-					<customCss>custom/custom.css</customCss>
-					<expandBeforeAfterHooks>true|false</expandBeforeAfterHooks>
-					<failScenariosOnPendingOrUndefinedSteps>true</failScenariosOnPendingOrUndefinedSteps>
-
-					<skip>true</skip>
-					<expandStepHooks>true|false</expandStepHooks>
-					<expandDocStrings>true|false</expandDocStrings>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compliler-plugin</artifactId>
-				<version>3.0</version>
-				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.18.1</version>
-				<configuration>
-					<includes>
-						<exclude>**/*TestRunner.java</exclude>
-					</includes>
-				</configuration>
-			</plugin>
-		</plugins>
-		</plugins>
-	</build>
+	
 	<dependencies>
 		<dependency>
 			<groupId>info.cukes</groupId>
@@ -172,7 +123,56 @@
 			<version>3.141.59</version> </dependency> -->
 
 	</dependencies>
+<build>
+		<plugins>
+			<plugin>
+				<groupId>com.trivago.rta</groupId>
+				<artifactId>cluecumber-report-plugin</artifactId>
+				<version>1.10.2</version>
+				<executions>
+					<execution>
+						<id>report</id>
+						<phase>post-integration-test</phase>
+						<goals>
+							<goal>reporting</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<sourceJsonReportDirectory>C:/Users/mitsind475/git/IND_MITS_SeleniumProject/Cucumber_SeleniumTest/target/cucumber-report</sourceJsonReportDirectory>
+					<generatedHtmlReportDirectory>C:/Users/mitsind475/git/IND_MITS_SeleniumProject/Cucumber_SeleniumTest/target/cucumber-html-report
+						- Copy</generatedHtmlReportDirectory>
+					<customCss>custom/custom.css</customCss>
+					<expandBeforeAfterHooks>true|false</expandBeforeAfterHooks>
+					<failScenariosOnPendingOrUndefinedSteps>true</failScenariosOnPendingOrUndefinedSteps>
 
+					<skip>true</skip>
+					<expandStepHooks>true|false</expandStepHooks>
+					<expandDocStrings>true|false</expandDocStrings>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compliler-plugin</artifactId>
+				<version>3.0</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<includes>
+						<exclude>**/*TestRunner.java</exclude>
+					</includes>
+				</configuration>
+			</plugin>
+		</plugins>
+		</plugins>
+	</build>
 
 
 </project>
