@@ -59,7 +59,7 @@
 				<version>2.18.1</version>
 				<configuration>
 					<includes>
-						<exclude>**/*testrunner.java</exclude>
+						<exclude>**/*TestRunner.java</exclude>
 					</includes>
 				</configuration>
 			</plugin>
